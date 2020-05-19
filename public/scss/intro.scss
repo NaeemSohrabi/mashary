@@ -1,0 +1,299 @@
+@import "partials/_font";
+@import "partials/_general";
+@import "partials/_variables";
+
+//html{
+//  min-height: 100%!important;
+//  height: 100%!important;
+//}
+html{
+  background: linear-gradient(to bottom, #e5e5e5 0%, #ffffff 100%);
+  //border: 3px solid black;
+  border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+  //min-height: 100%!important;
+}
+body {
+background-color: transparent;
+  //min-height: 100%!important;
+  //height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.adob-arabic {
+  font-family: "Adobe Arabic";
+  font-size: 18pt;
+}
+
+.intro {
+  padding-top: 200px;
+  //min-height: 100% !important;
+  //height: 100%;
+  .container {
+    .arab-logo {
+      img {
+        width: 350px;
+        float: right;
+      }
+    }
+    .en-logo {
+      margin-top: 10px;
+      img {
+        width: 350px;
+      }
+    }
+    .text {
+      ul {
+        list-style: none;
+        padding-top: 70px;
+        li {
+          display: inline-block;
+          a {
+            color: $mashary-blue;
+            text-decoration: none;
+            &:hover {
+              color: #83c5ed;
+            }
+          }
+          &:first-child {
+            a {
+              margin-left: 50px;
+              margin-right: 165px;
+            }
+          }
+        }
+
+      }
+    }
+    .text-inverce {
+      ul {
+        list-style: none;
+        padding-top: 70px;
+        li {
+          display: inline-block;
+          a {
+            color: $mashary-blue;
+            text-decoration: none;
+            &:hover {
+              color: $mashary-gold;
+            }
+          }
+          &:first-child {
+            a {
+              margin-right: 163px;
+              margin-left: 167px;
+            }
+          }
+        }
+
+      }
+    }
+    .welcom {
+      padding-top: 100px;
+      color: #B2B2B1;
+      div {
+        padding-bottom: 15px;
+      }
+      .english {
+        font-size: 11pt;
+      }
+      .persian {
+        font-size: 18pt;
+        font-family: "Adobe Arabic";
+      }
+      .arabic {
+        font-size: 20pt;
+        word-spacing: 7px;
+      }
+    }
+
+    .copy-rule {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #B2B2B1;
+      width: 100%;
+      text-align: center;
+      font-size: 10pt;
+    }
+  }
+}
+
+#admin{
+  direction: rtl;
+  font-family: irsans-no-reg;
+
+  .modal-dialog{
+    .modal-content{
+      background: linear-gradient(to bottom, #e5e5e5 0%, #ffffff 100%);
+      //border: 3px solid black;
+      border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+      .modal-header{
+        img{
+          width: 35%;
+          float: left;
+        }
+      }
+      .modal-body{
+        .panel-heading{
+          background-color: $mashary-gold;
+        }
+        .btn-login{
+          color: white;
+          background-color: $mashary-blue!important;
+        }
+      }
+      .modal-footer{
+
+      }
+    }
+  }
+}
+
+@media (max-width: 986px) {
+  /* For mobile phones: */
+
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px!important;
+    img{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .arab-logo{
+    img{
+      float: unset !important;
+    }
+  }
+  .intro {
+    padding-top: 40px!important;
+
+    .welcom{
+      padding-top: 30px!important;
+      .persian{
+        font-size: 13.5pt!important;
+      }
+      .english{
+        //font-size: 15pt!important;
+      }
+      .arabic{
+        //font-size: 15pt!important;
+      }
+    }
+    .text-inverce, .text{
+      ul {
+        list-style: none;
+        padding-top: 20px!important;
+        font-size: 14pt;
+        li {
+          display: inline-block;
+          a {
+            color: $mashary-blue;
+            text-decoration: none;
+            margin: 0!important;
+            //padding: 40px!important;
+            padding-right: 30px;
+            padding-left: 30px;
+            &:hover {
+              color: #$mashary-gold;
+
+            }
+          }
+          &:first-child {
+            a {
+              //margin-left: 50px!important;
+              //margin-right: 165px!important;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+
+
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px!important;
+    img{
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .intro {
+    padding-top: 40px!important;
+
+    .welcom{
+      padding-top: 30px!important;
+      .persian{
+        font-size: 13.5pt!important;
+      }
+      .english{
+        font-size: 8.8pt!important;
+      }
+      .arabic{
+        font-size: 14pt!important;
+      }
+    }
+    .text-inverce, .text{
+      ul {
+        list-style: none;
+        padding-top: 20px!important;
+        font-size: 9pt;
+        li {
+          display: inline-block;
+          a {
+            color: $mashary-blue;
+            text-decoration: none;
+            margin: 0!important;
+            //padding: 40px!important;
+            padding-right: 30px;
+            padding-left: 30px;
+            &:hover {
+              color: $mashary-gold;
+
+            }
+          }
+          &:first-child {
+            a {
+              //margin-left: 50px!important;
+              //margin-right: 165px!important;
+            }
+          }
+        }
+
+      }
+    }
+    .copy-rule{
+      p{
+        font-size: 8pt;
+      }
+    }
+  }
+
+}
+
+@media only screen and(orientation: landscape) {
+  .intro{
+    .copy-rule{
+      //position:relative!important;
+      margin-top: 100px;
+    }
+  }
+
+}
